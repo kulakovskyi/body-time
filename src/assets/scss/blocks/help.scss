@@ -1,0 +1,120 @@
+.help {
+  padding: 0 0 176px 0;
+  @include breakpoint($tablet-bp) {
+    padding: 0 0 116px 0;
+  }
+
+  @include breakpoint($mobile-bp) {
+    padding: 0 0 72px 0;
+  }
+}
+
+.help__title {
+  max-width: 524px;
+}
+
+.help__row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 32px;
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 130%;
+  @include breakpoint($tablet-bp) {
+    gap: 12px;
+  }
+
+  @include breakpoint(882px) {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  @include breakpoint($mobile-bp) {
+    font-size: 16px;
+    line-height: 130%;
+  }
+}
+
+.help__item__one {
+  grid-row: 1/3;
+  grid-column: 1/2;
+  padding: 48px 48px 456px 48px;
+  border-radius: 16px;
+  background: url(../images/help/help-one.jpg) center no-repeat;
+  background-size: cover;
+  span {
+    display: inline-block;
+    max-width: 409px;
+  }
+
+  @include breakpoint($mobile-bp) {
+    padding: 24px 24px 184px 24px;
+  }
+}
+
+.help__item__two {
+  grid-row: 1/2;
+  grid-column: 2/4;
+  border-radius: 16px;
+  padding: 168px 48px 48px 48px;
+  background: url(../images/help/help-two.jpg) center no-repeat;
+  background-size: cover;
+  span {
+    display: inline-block;
+    max-width: 400px;
+  }
+
+  @include breakpoint($mobile-bp) {
+    padding: 72px 24px 24px 24px;
+  }
+}
+
+.help__item__three {
+  padding: 0 20px;
+  background: #c6c6c6;
+  border-radius: 16px;
+  font-size: 22px;
+  line-height: 130%;
+  text-align: center;
+  @extend %flex-center;
+
+  @include breakpoint($tablet-bp) {
+    font-size: 19px;
+  }
+
+  @include breakpoint(882px) {
+    padding: 50px 24px 50px 24px;
+    font-size: 22px;
+  }
+
+  @include breakpoint($mobile-bp) {
+    font-size: 16px;
+    line-height: 130%;
+  }
+}
+
+.help__item__fourth {
+  padding: 0 20px;
+  background: #c7df9e;
+  border-radius: 16px;
+  font-size: 22px;
+  line-height: 130%;
+  text-align: center;
+  @extend %flex-center;
+
+  @include breakpoint($tablet-bp) {
+    font-size: 19px;
+  }
+
+  @include breakpoint(882px) {
+    padding: 50px 24px 50px 24px;
+    font-size: 22px;
+  }
+
+  @include breakpoint($mobile-bp) {
+    font-size: 16px;
+    line-height: 130%;
+  }
+}
