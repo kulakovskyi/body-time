@@ -10,6 +10,7 @@
   <li>⭐Все изображения собраны по папкам</li>
   <li>⭐В написании разметки использовалась методология БЭМ</li>
   <li>⭐Исходники находятся в папке <a href="https://github.com/kulakovskyi/body-time/tree/main/src">src</a></li>
+  <li>⭐<a href="https://kulakovskyi.github.io/body-time/">Ссылка на проект</a></li>
 </ul>
 
 <h1><h1>
