@@ -1814,6 +1814,11 @@ body._lock {
     }
 }
 
+._active-btn {
+    color: white;
+    background: #828282;
+}
+
 .category {
     display: none;
 }
