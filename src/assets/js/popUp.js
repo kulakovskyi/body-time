@@ -41,18 +41,22 @@ let popupPaddingRight = function () {
   body.style.paddingRight = width;
 };
 
-telPopUp.addEventListener("click", (e) => {
-  open();
-  window.onclick = function (e) {
-    if (e.target == popUp) {
-      close();
-    }
-  };
-});
+if (telPopUp) {
+  telPopUp.addEventListener("click", (e) => {
+    open();
+    window.onclick = function (e) {
+      if (e.target == popUp) {
+        close();
+      }
+    };
+  });
+}
 
-popUpClose.addEventListener("click", (e) => {
-  close();
-});
+if (popUpClose) {
+  popUpClose.addEventListener("click", (e) => {
+    close();
+  });
+}
 
 /******************FORM*****************************/
 
