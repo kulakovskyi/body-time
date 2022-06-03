@@ -57,6 +57,11 @@
   }
 }
 
+._active-btn {
+  color: white;
+  background: #828282;
+}
+
 .category {
   display: none;
   @include breakpoint($tablet-bp) {
