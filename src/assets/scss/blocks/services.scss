@@ -1,0 +1,253 @@
+.services__container {
+  position: relative;
+}
+
+.services__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  @include breakpoint($tablet-bp) {
+    justify-content: flex-end;
+    position: relative;
+  }
+}
+
+.services__buttons {
+  display: flex;
+  gap: 24px;
+
+  @include breakpoint($tablet-bp) {
+    flex-direction: column;
+    max-width: 140px;
+    gap: 7px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    visibility: hidden;
+    overflow: auto;
+    z-index: 5;
+    height: 0;
+    opacity: 1;
+    transition: 0.3s ease;
+
+    &._active-category {
+      opacity: 1;
+      height: 500px;
+      visibility: visible;
+    }
+  }
+}
+
+.services__button {
+  font-size: 14px;
+  line-height: 14px;
+  padding: 16px 24px;
+  background: white;
+  border: 1px solid #828282;
+  border-radius: 4px;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: white;
+    background: #828282;
+  }
+
+  @include breakpoint($mobile-bp) {
+    padding: 10px 20px;
+  }
+}
+
+.category {
+  display: none;
+  @include breakpoint($tablet-bp) {
+    display: inline-block;
+    position: absolute;
+    top: 81px;
+  }
+
+  @include breakpoint($mobile-bp) {
+    top: 35px;
+    padding: 10px 20px;
+  }
+}
+
+/*input search*/
+
+.services__serach {
+  position: relative;
+  display: inline-block;
+  transition: 0.3s cubic-bezier(0, 0.8, 0, 1);
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.input__search {
+  height: 100%;
+  width: 0;
+  padding: 0 42px 0 0px;
+  background: transparent;
+  transition: 0.3s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+
+  &:focus {
+    width: 200px;
+    z-index: 2;
+    border-bottom: 2px solid #828282;
+  }
+
+  @include breakpoint(1036px) {
+    &:focus {
+      width: 150px;
+    }
+  }
+
+  @include breakpoint(388px) {
+    &:focus {
+      width: 100px;
+    }
+  }
+}
+
+.button__search {
+  background: transparent;
+  border: none;
+  height: 28px;
+  width: 28px;
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  transition: 0.4s cubic-bezier(0, 0.8, 0, 1);
+
+  @include breakpoint($tablet-bp) {
+    top: -35px;
+  }
+
+  @include breakpoint($mobile-bp) {
+    & img {
+      max-width: 25px;
+    }
+  }
+}
+
+/************ITEM-INFO*******************/
+
+.services__row__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  padding: 48px 0 176px 0;
+  @include breakpoint($tablet-bp) {
+    padding: 48px 0 72px 0;
+  }
+
+  @include breakpoint($mobile-bp) {
+    padding: 16px 0 36px 0;
+    gap: 24px;
+  }
+}
+
+.services__item {
+  max-width: 780px;
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint(1630px) {
+    max-width: 650px;
+  }
+
+  @include breakpoint(1367px) {
+    max-width: 550px;
+  }
+
+  @include breakpoint(1167px) {
+    max-width: 450px;
+  }
+
+  @include breakpoint($tablet-bp) {
+    max-width: 780px;
+  }
+}
+
+.services__item__image {
+  img {
+    max-width: 100%;
+  }
+}
+
+.services__item__info {
+  background: #f9f9f9;
+  border-radius: 0px 0px 16px 16px;
+  padding: 48px;
+  flex: 1 1 auto;
+
+  @include breakpoint(1367px) {
+    padding: 38px;
+  }
+
+  @include breakpoint($tablet-bp) {
+    padding: 20px;
+  }
+}
+
+.services__item__title {
+  display: inline-block;
+  font-size: 32px;
+  color: #363431;
+  line-height: 130%;
+  margin: 0 0 24px 0;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: #c7df9e;
+  }
+
+  @include breakpoint(1167px) {
+    font-size: 28px;
+  }
+
+  @include breakpoint($mobile-bp) {
+    font-size: 18px;
+  }
+}
+
+.item__list__text {
+  font-size: 20px;
+  line-height: 130%;
+  margin: 0 0 16px 0;
+  max-width: 400px;
+
+  .line-through {
+    font-size: 15px;
+    text-decoration: line-through;
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+
+  @include breakpoint(1167px) {
+    font-size: 17px;
+  }
+
+  @include breakpoint($mobile-bp) {
+    font-size: 14px;
+  }
+}
+
+.item__list__text__link {
+  color: #363431;
+  text-decoration: underline;
+  transition: 0.3s ease;
+  &:hover {
+    color: #c7df9e;
+    text-decoration: underline;
+  }
+}

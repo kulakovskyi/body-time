@@ -1,0 +1,39 @@
+.breadcrumbs {
+  padding: 24px 0 112px 0;
+  @include breakpoint($tablet-bp) {
+    padding: 88px 0 92px 0;
+  }
+
+  @include breakpoint($mobile-bp) {
+    padding: 88px 0 72px 0;
+  }
+}
+
+.breadcrumbs__row {
+  display: flex;
+  gap: 25px;
+
+  .breadcrumbs__link {
+    color: #363431;
+    transition: 0.3s ease;
+    &:hover {
+      color: #c7df9e;
+    }
+  }
+
+  .breadcrumbs__link__green {
+    color: rgb(167, 221, 74);
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1.2px;
+      width: 13px;
+      background: #363431;
+      top: 50%;
+      transform: translate(0, -50%);
+      left: -18px;
+    }
+  }
+}
