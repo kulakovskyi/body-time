@@ -1,4 +1,4 @@
-<h1> <a href="https://kulakovskyi.github.io/body-time/" target="_blank">Многостраничный сайт</a> для студии Body Time (Страницы Акции Прайс Контакты в доработке)</h1>
+<h1> <a href="https://kulakovskyi.github.io/body-time/" target="_blank">Многостраничный сайт</a> для студии Body Time (Страницы: Акции, Прайс, Контакты - в доработке)</h1>
 <ul type="none">
   <li>⭐Проект собран с помощью GULP/WEBPACK</li>
   <li>⭐В работе использыван SCSS</li>
